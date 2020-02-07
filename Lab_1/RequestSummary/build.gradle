@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'org.apache.hadoop:hadoop-core:1.2.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
